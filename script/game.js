@@ -54,6 +54,13 @@ function checkAnswer(currentlevel)
 
 var st=0;
 $("#reset").click(function(){
+  setTimeout(function(){
+    $("h1").text("Press any Key/start Key to start");
+    startOver();
+  });
+});
+
+$("#start").click(function(){
   if(st===0)
   {
     setTimeout(function(){
